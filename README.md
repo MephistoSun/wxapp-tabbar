@@ -64,8 +64,8 @@ var data = {
   color: 'darkgrey',//默认tab字体颜色
   selectedColor: '#479de6',//选中tab字体颜色
   isReminder: true,//是否启用提醒功能，可不添加该字段，默认不启用，不启用则无法使用setReminder与removeReminder方法
-  list: [
-    {
+  list: [// tab list最多5个最少2个
+    {
       tabName: 'Home',//tabName，必填，类似tabID
       pagePath: ['pages/home/home', 'pages/home-content/home-content'],//tab下所属路径，默认会自动根据此此段来匹配是否为选中状态，首项为主页
       text: '首页',//tab文字
