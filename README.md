@@ -1,7 +1,7 @@
 #微信小程序自定义tabbar组件
 
 ##如何使用
-###1.配置导航config并初始化组件
+####1.配置导航config并初始化组件
 ```js
 var tabbar = require('./tabbar/tabbar')
 var data = {
@@ -48,11 +48,11 @@ App({
   }
 })
 ```
-###2.引入wxss样式表
+####2.引入wxss样式表
 ```wxss
 @import './tabbar/tabbar.wxss'
 ```
-###3.引入wxml模板
+####3.引入wxml模板
 ```wxml
 <import src="../../tabbar/tabbar.wxml" />
 <template is="tabbar" data="{{ tabbar }}" />
@@ -98,7 +98,7 @@ var data = {
 ```
 
 ##如何使用
-###在需要引用的页面初始化tabbar
+####在需要引用的页面初始化tabbar
 app.tabbar.init()//无参数
 ```js
 var app = getApp()
@@ -124,7 +124,7 @@ Page({
 })
 ```
 
-###手动切换tab页面
+####手动切换tab页面
 app.tabbar.switchTab(tabName)//单一参数，跳转到tabName的tab主页
 ```js
 var app = getApp()
@@ -151,7 +151,7 @@ Page({
 })
 ```
 
-###设置提示
+####设置提示
 app.tabbar.setReminder(tabName1, tabName2,...)//多参数，参数为tabName
 ```js
 var app = getApp()
@@ -178,7 +178,7 @@ Page({
 })
 ```
 
-###取消提醒
+####取消提醒
 app.tabbar.removeReminder(tabName1, tabName2,...)//多参数，参数为tabName
 ```js
 var app = getApp()
@@ -205,7 +205,8 @@ Page({
 })
 ```
 
-###自定义
-PS作者鼓励修改源文件来自定义tabbar或者添加动画等
+##PS
+####PS作者鼓励修改源文件来自定义tabbar或者添加动画等
+####暂时只有es5版本，es6版本待定中
 
 ##Enjoy it
