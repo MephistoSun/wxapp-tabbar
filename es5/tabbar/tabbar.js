@@ -34,6 +34,8 @@ var tabbar = {
         for (var a = 0; a < tabData.list.length; a++) {
             var itemData = tabData.list[a]
             itemData = Object.assign({}, initItemData, itemData)
+            if (typeof itemData.tabName != 'string' ||
+            itemData.tabName === '') console.error('expect tabName and tabName is string')
         }
         return tabData
     },
