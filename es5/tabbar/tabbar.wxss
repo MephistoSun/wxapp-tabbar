@@ -1,0 +1,69 @@
+page {
+  padding-bottom: 40px;
+}
+
+.custom-tabbar {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  padding: 30rpx 40rpx 10rpx 40rpx;
+  background: black;
+}
+
+.custom-tabbar-grid-2 .custom-tabbar-item {
+  width: 50%;
+}
+
+.custom-tabbar-grid-3 .custom-tabbar-item {
+  width: 33.3333%;
+}
+
+.custom-tabbar-grid-4 .custom-tabbar-item {
+  width: 25%;
+}
+
+.custom-tabbar-grid-5 .custom-tabbar-item {
+  width: 20%;
+}
+
+.custom-tabbar-item {
+  position: relative;
+  display: block;
+  float: left;
+}
+
+.custom-tabbar-item-hover {
+  opacity: 0.8;
+}
+
+.custom-tabbar-item-ico {
+  display: block;
+  width: 60rpx;
+  height: 60rpx;
+  margin: 0 auto 10rpx auto;
+}
+
+.custom-tabbar-item-title {
+  display: block;
+  font-size: 30rpx;
+  line-height: 50rpx;
+  color: white;
+  text-align: center;
+}
+
+.custom-tabbar-item-reminder {
+}
+
+.custom-tabbar-reminder-circle .custom-tabbar-item-reminder {
+  position: absolute;
+  top: 0;
+  left: 50%;
+  width: 20rpx;
+  height: 20rpx;
+  margin-top: -5rpx;
+  margin-left: 20rpx;
+  border-radius: 100%;
+  background: red;
+  font-size: 0;
+}

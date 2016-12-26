@@ -1,0 +1,5 @@
+
+<!--pages/list/list.wxml-->
+<text>pages/list/list.wxml</text>
+<import src="../../tabbar/tabbar.wxml" />
+<template is="tabbar" data="{{ tabbar }}" />

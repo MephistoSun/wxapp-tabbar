@@ -1,0 +1,9 @@
+
+<!--pages/home/home.wxml-->
+<text>pages/home/home.wxml</text>
+<button bindtap="setReminder">设置提醒</button>
+<button bindtap="removeReminder">取消提醒</button>
+<button bindtap="switchTab">切换到List</button>
+<button bindtap="redirectChild">进入Home子页面</button>
+<import src="../../tabbar/tabbar.wxml" />
+<template is="tabbar" data="{{ tabbar }}" />

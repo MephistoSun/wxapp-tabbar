@@ -1,0 +1,24 @@
+<template name="tabbar">
+    <view class="custom-tabbar custom-tabbar-grid-{{ tabbar.list.length }}{{ tabbar.isReminder ? ' custom-tabbar-reminder-circle' : '' }}" wx:if="{{ tabbar.isShow }}">
+        <view 
+        class="custom-tabbar-item{{ item.isActive ? ' active' : '' }}" 
+        hover-class="custom-tabbar-item-hover" 
+        wx:for="{{ tabbar.list }}" 
+        wx:for-item="item" 
+        wx:for-index="index" 
+        wx:key="item.tabName" 
+        data-index="{{ index }}" 
+        bindtap="redirectTab">
+            <image
+            class="custom-tabbar-item-ico"
+            src="{{ item.isActive ? item.selectedIconPath : item.iconPath }}"></image>
+            <text 
+            class="custom-tabbar-item-title" 
+            style="color: {{ item.isActive ? tabbar.selectedColor : tabbar.color  }}">{{ item.text }}</text>
+            <text 
+            class="custom-tabbar-item-reminder" 
+            wx:if="{{ tabbar.isReminder }}" 
+            hidden="{{ !item.isReminder }}"></text>
+        </view>
+    </view>
+</template>
